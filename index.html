@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-img">
+      <img src="./images/logo.svg" alt="logo">
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="tip-calculator">
+        <div class="bill-container">
+          <label for="bill">Bill</label>
+          <p><small class="error-msg "></small></p>
+          <input
+            type="number"
+            name="bill"
+            id="bill"
+            class="input input-bill"
+            placeholder="0"
+            min="0"
+          />
+        </div>
+
+        <div class="tip-container">
+          <label for="tip">Select Tip %</label>
+          <button class="tip-btn tip-option">5%</button>
+          <button class="tip-btn tip-option">10%</button>
+          <button class="tip-btn tip-option">15%</button>
+          <button class="tip-btn tip-option">25%</button>
+          <button class="tip-btn tip-option">50%</button>
+          <input
+            type="number"
+            name="tip"
+            id="tip"
+            class="input tip-option"
+            placeholder="Custom"
+            min="0"
+          />
+          <p><small class="error-msg"></small></p>
+        </div>
+
+        <div class="people-container">
+          <label for="">Number of People</label>
+          <p><small class="error-msg"></small></p>
+          <input
+            type="number"
+            name="people"
+            id="people"
+            class="input input-people"
+            placeholder="0"
+            min="1"
+          />
+        </div>
+      </div>
+
+      <div class="display">
+        <div class="tip-amount-container">
+          <div class="tip-amount-description">
+            <p>Tip Amount</p>
+            <p><small>/ person</small></p>
+          </div>
+          <div class="tip-amount-container">
+            <h1>$<span class="tip-amount-display"></span></h1>
+          </div>
+        </div>
+        <div class="total-amount-container">
+          <div class="total-amount">
+            <div class="total-amount-description">
+              <p>Total</p>
+              <p><small>/ person</small></p>
+            </div>
+            <div class="total">
+              <h1>$<span class="total-amount-display"></span></h1>
+            </div>
+          </div>
+          <div class="reset-btn-container">
+            <button class="reset-btn">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <script src="app.js"></script>
+</body>
+</html>
